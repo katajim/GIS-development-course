@@ -66,6 +66,7 @@ def rasterize(in_vector,in_dem,out_fp):
         Output: out_fp parameter as a string
     '''
     # Open both raster and vector layers with gdal and ogr
+    print('start rasterize')
     arr,ras_ds = read_geotiff(in_dem)
     vec_ds = ogr.Open(in_vector) 
     lyr = vec_ds.GetLayer()
@@ -81,6 +82,7 @@ def rasterize(in_vector,in_dem,out_fp):
     # Close the file 
     chn_ras_ds= None
 
+    print('end rasterize')
     # returns parameter out_fp 
     return out_fp
 
