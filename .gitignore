@@ -1,4 +1,6 @@
 /test_data/ept_Test_area_laser
+preprocessing_module.py
+preprocessing.py
 /.conda
 /.venv
-test.ipynb
+/test_data/isompi_Testi
